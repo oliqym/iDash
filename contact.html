@@ -1,3 +1,4 @@
+<!--iDash 2023-->
 <!--detailed codes examples @ F:\Bootstrap\bootstrap-5.0.2-examples -->
 <!doctype html>
 <html lang="en">
@@ -12,81 +13,34 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-  <!--Jquery CDN-->
-  <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
-    integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
-  <!--reusable header-->
+
   <title>iDash</title>
+  <script src="reusable.js"></script>
 </head>
 
 <body>
-  <!--nav & Jumbotron-->
-<div class="container">
-  <!--header-->
-  <header>
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-flex justify-content-between">
-          <div class="container-fluid">
-              <!-- 
-        <a class="navbar-brand" href="#">Navbar</a>
-        -->
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                  aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                  <ul class="navbar-nav">
-                      <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="index.html">About</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="tAsks.html">Tasks</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="aGenda.html">Agenda</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="cOntact.html">Contact</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="rEgistration" role="button" data-bs-toggle="dropdown"
-                          aria-expanded="false">
-                          Registration
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark bg-dark" aria-labelledby="rEgistration">
-                          <li><a class="dropdown-item" href="reGistration.html">Competition</a></li>
-                          <li><a class="dropdown-item" href="reGistration.html">Workshops</a></li>
-                          </ul>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-      </nav>
-
-      <!-- Jumbotron Need to be editable every year-->
-      <div class="p-5 text-center bg-light">
-          <h1 class="mb-3">iDash Privacy & Security Workshop 2022</h1>
-          <h4 class="mb-3">Secure Genome Analysis Competition</h4>
-      </div>
-  </header>
-</div>
+  <div w3-include-html="header.html"></div>
   <!--Contact section-->
   <main class="container">
-  <section id="cOntact" class="row mb-2">
-    <div class="col">
-      <h2>Contact</h2>
-      <p>
-        The goal of this challenge is to evaluate the performance of state-of-the-art methods that ensure rigorous
-        data confidentiality during data analyses in a cloud environment.
-      </p>
-    </div>
+    <section id="cOntact" class="row mb-2">
+      <div class="col">
+        <h2>Contact</h2>
+        <p>
+          The goal of this challenge is to evaluate the performance of state-of-the-art methods that ensure rigorous
+          data confidentiality during data analyses in a cloud environment.
+        </p>
+      </div>
 
-  </section>
+    </section>
   </main>
+
+  <!--footer-->
+  <div w3-include-html="footer.html"></div>
+
+  <!-- End of .container -->
+  <script>
+    includeHTML();
+  </script>
 </body>
 
 </html>
