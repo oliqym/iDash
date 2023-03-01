@@ -1,7 +1,6 @@
-/* hex:	00ACF0 */
+/* hex:	#00ACF0*/
 
-/* footer{
-    background-image: url("/img/banner-landing.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
+.navbar-dark .navbar-toggler{
+    border-color: #00ACF0;
+}
+

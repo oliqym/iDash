@@ -2,28 +2,22 @@
 <!--detailed codes examples @ F:\Bootstrap\bootstrap-5.0.2-examples -->
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <!--Bootstrap CDNs-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-
+  <!--header snippet-->
   <script src="/scripts/reusable.js"></script>
-
   <title>iDash</title>
   <link rel="icon" type="images/x-icon" href="img/favicon-32x32.png" alt="">
-
   <!--additional css-->
   <link href="main.css" rel="stylesheet">
 </head>
-
 <body>
   <div w3-include-html="/pages/header.html"></div>
   
@@ -31,33 +25,54 @@
     <!--Winners section-->
     <div class="row mb-5">
       <h2>Competition Winners</h2>
-      <p>Track I: Blockchain-based Recording of Biomedical and Genomic Compliance Training Certificates</p>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">FIRST PLACE: Yale University</li>
-        <li class="list-group-item">SECOND PLACE: Antchain</li>
-        <li class="list-group-item">THIRD PLACE: ByteDance Jeddak Team</li>
-      </ul>
-      <p>Track II: Secure Model Evaluation on Homomorphically Encrypted Genotype Data*</p>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">FIRST PLACE: AngelPowerFL (Tencent)</li>
-        <li class="list-group-item">SECOND PLACE: TheVault (Intel Corporation)</li>
-        <li class="list-group-item">THIRD PLACE(two teams tie): TuneInsight-EPFL & AntChain Morse</li>
-      </ul>
-      <p>Track III: Confidential Computing for clustering single-cell transcriptomics data</p>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">FIRST PLACE: AntChain</li>
-        <li class="list-group-item">SECOND PLACE (two teams tie):
-          ByteDance Jeddak &
-          Gemini Lab</li>
-        <li class="list-group-item">THIRD PLACE: Angel PowerFL (Tencent)</li>
-      </ul>
-      <p>Track IV: Secure Record Linkage</p>
-      <ul class="list-group">
-        <li class="list-group-item">FIRST PLACE: Morse</li>
-        <li class="list-group-item">SECOND PLACE (two teams tie): Angel PowerFL & COD</li>
-        <li class="list-group-item">THIRD PLACE: Samsung SDS</li>
-      </ul>
-      
+      <!--Track 1 winners-->
+      <div class="card">
+        <div class="card-header">
+          <h5>Track I: Blockchain-based Recording of Biomedical and Genomic Compliance Training Certificates</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">1st PLACE: Yale University</li>
+          <li class="list-group-item">2nd PLACE: Antchain</li>
+          <li class="list-group-item">3rd PLACE: ByteDance Jeddak Team</li>
+        </ul>
+      </div>
+      <!--Track 2 winners-->
+      <div class="card">
+        <div class="card-header">
+          <h5>Track II: Secure Model Evaluation on Homomorphically Encrypted Genotype Data*</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">1st PLACE:: AngelPowerFL (Tencent)</li>
+          <li class="list-group-item">2nd PLACE: TheVault (Intel Corporation)</li>
+          <li class="list-group-item">3rd PLACE(two teams tie): TuneInsight-EPFL & AntChain Morse</li>
+        </ul>
+      </div>
+      <!--Track 3 winners-->
+      <div class="card">
+        <div class="card-header">
+          <h5>Track III: Confidential Computing for clustering single-cell transcriptomics data</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">1st PLACE: AntChain</li>
+          <li class="list-group-item">2nd PLACE: (two teams tie):
+            ByteDance Jeddak &
+            Gemini Lab</li>
+          <li class="list-group-item">3rd PLACE: Angel PowerFL (Tencent)</li>
+        </ul>
+      </div>
+      <!--Track 4 winners-->
+      <div class="card">
+        <div class="card-header">
+          <h5>Track IV: Secure Record Linkage</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">1st PLACE: Morse</li>
+          <li class="list-group-item">2nd PLACE: (two teams tie):
+            Angel PowerFL & COD</li>
+          <li class="list-group-item">3rd PLACE: Samsung SDS</li>
+        </ul>
+      </div>
+      <!--footnote on winners-->
       <small>This year track II had many high performing submissions which made it challenging to rank the top
         solutions. Therefore,
         ranking for Track2 may not reflect the actual performance of submissions. Each submission has unique strength
