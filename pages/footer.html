@@ -1,27 +1,44 @@
 <footer class="pyfa-stack-1x text-white bg-dark">
   <div class="site-section">
     <div class="container">
-      <div class="row">
+      <div class="row d-flex justify-content-center">
         <div class="col-md-3 my-4 mb-md-0">
           <h3>About Us</h3>
-          <p class="mb-4">​Interested participants please first register through our registration page. Further announcement on the competition datasets will be sent to registered teams. Workshop registration will be added later.</p>
+          <p class="mb-4">​Interested participants please first register through our registration page. Further
+            announcement on the competition datasets will be sent to registered teams. Workshop registration will be
+            added later.</p>
           <!--clickable contact links-->
           <ul class="list-unstyled quick-info mb-4">
             <li><a href="tel:+1 2913912 329" class="d-flex align-items-center link-info">+1 2913912 329</a></li>
             <li><a href="mailto:email@example.com" class="d-flex align-items-center link-info">email@example.co</a></li>
           </ul>
+          <!--website logo only shows on lg-->
+          <div class="col-12 d-none d-lg-block">
+            <div class="py-5 footer-menu-wrap">
+              <div class="site-logo-wrap ml-auto">
+                <img src="/img/idash.jpg" class="img-fluid rounded-3" alt="iDash">
+                <br>
+                <small><i class="fa fa-copyright" aria-hidden="true">idash copyright</i></small>
+              </div>
+            </div>
+          </div>
         </div>
-
         <div class="col-md-3 my-4 mb-md-0">
           <h3>Latest News</h3>
-          <ul class="list-unstyled">
+          <ul  class="list-unstyled">
             <li class="d-flex">
               <div class="mr-4">Workshops videos are now available!</div>
             </li>
-            <li class="d-flex">
-              <a href="https://academic.oup.com/jamia/article/29/12/2182/6717759" class="mr-4 link-info">Our paper for
+            <li class="d-flex my-2">
+              <a id="paper" href="https://academic.oup.com/jamia/article/29/12/2182/6717759" class="mr-4 link-info">Our paper for
                 iDASH Overview and 2020/2021 Competitions is published
-                in Journal of the American Medical Informatics Association!</a>
+                in Journal of the American Medical Informatics Association!<svg xmlns="http://www.w3.org/2000/svg"
+                  width="16" height="16" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
+                  <path
+                    d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
+                  <path
+                    d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z" />
+                </svg></a>
             </li>
             <li class="d-flex">
               <div class="mr-4">*NHGRI R13HG009072
@@ -29,32 +46,27 @@
             </li>
           </ul>
         </div>
-
         <!--Sponsors-->
         <div class="col-md-3 my-4 mb-md-0 ">
           <h3>Sponsors</h3>
-
           <div class="row gallery">
             <div class="col-6">
               <img src="/img/NIH.jpg" alt="NIH" class="img-fluid mb-1">
-
               <img src="/img/meta-logo.jpg" alt="Meta" class="img-fluid">
             </div>
           </div>
         </div>
-
-        <!--website logo-->
-        <div class="col-12">         
-          <div class="py-5 footer-menu-wrap d-md-flex align-items-center">
-            <div class="site-logo-wrap ml-auto">
-              <img src="/img/idash.jpg" class="img-fluid rounded-3" alt="iDash">
-              <br>
-              <small><i class="fa fa-copyright" aria-hidden="true">idash copyright</i></small>
-            </div> 
+      </div>
+      <!--website logo shows on sm and md-->
+      <div class="col-12 d-lg-none d-sm-block d-md-block">
+        <div class="py-5 footer-menu-wrap">
+          <div class="site-logo-wrap ml-auto">
+            <img src="/img/idash.jpg" class="img-fluid rounded-3" alt="iDash">
+            <br>
+            <small><i class="fa fa-copyright" aria-hidden="true">idash copyright</i></small>
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </footer>
