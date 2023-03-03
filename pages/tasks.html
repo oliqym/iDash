@@ -3,94 +3,150 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!--Bootstrap CDNs-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!--Bootstrap CDNs-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
-    <script src="/scripts/reusable.js"></script>
+  <script src="/scripts/reusable.js"></script>
 
-    <title>iDash</title>
-    <link rel="icon" type="images/x-icon" href="/img/favicon-32x32.png" alt="">
+  <title>iDash</title>
+  <link rel="icon" type="images/x-icon" href="/img/favicon-32x32.png" alt="">
 
-    <!--additional css-->
-    <link href="main.css" rel="stylesheet">
+  <!--additional css-->
+  <link href="main.css" rel="stylesheet">
 </head>
 
 <body>
-    <div w3-include-html="/pages/header.html"></div>
-    <!--Tasks-->
-    <div class="panel-group" id="accordion">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-                Task 1: Blockchain-based Recording of Biomedical and Genomic Compliance Training Certificates</a>
-            </h4>
-          </div>
-          <div id="collapse1" class="panel-collapse collapse in">
-            <div class="panel-body">
-                <!--Tasks-->
-            </div>
+  <div w3-include-html="/pages/header.html"></div>
+
+  <div class="container mt-3">
+    <h3>4 Competition Tasks</h3>
+    <div id="accordion">
+      <!--Tasks 1-->
+      <div class="card">
+        <div class="card-header">
+          <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+            Task 1: Blockchain-based Recording of Biomedical and Genomic Compliance Training Certificates
+          </a>
+          <small>(Organized by Tsung-Ting Kuo and Lucila Ohno-Machado)</small>
+        </div>
+        <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+          <div class="card-body">
+            <ul>
+              <li>Background:</li>
+              <li>Goal:</li>
+              <li>Challenge: </li>
+              <li>Evaluation:</li>
+              <li>License: </li>
+              <li>Data and Code Skeleton:</li>
+              <li>FAQ:</li>
+              <li>Reference:</li>
+            </ul>
           </div>
         </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-                Task 2: Secure Model Evaluation on Homomorphically Encrypted Genotype Data</a>
-            </h4>
-          </div>
-          <div id="collapse2" class="panel-collapse collapse">
-            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat.</div>
+      </div>
+      <!--Task 2-->
+      <div class="card">
+        <div class="card-header">
+          <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+            Task 2: Secure Model Evaluation on Homomorphically Encrypted Genotype Data
+          </a>
+        </div>
+        <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+          <div class="card-body">
+            <ul>
+              <li>Background:</li>
+              <li>Goal:</li>
+              <li>Challenge: </li>
+              <li>Evaluation:</li>
+              <li>License: </li>
+              <li>Data and Code Skeleton:</li>
+              <li>FAQ:</li>
+              <li>Reference:</li>
+            </ul>
           </div>
         </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title">
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-                Task 3: Confidential Computing for clustering single-cell transcriptomics data</a>
-            </h4>
-          </div>
-          <div id="collapse3" class="panel-collapse collapse">
-            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat.</div>
+      </div>
+      <!--Task 3-->
+      <div class="card">
+        <div class="card-header">
+          <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+            Task 3: Confidential Computing for clustering single-cell transcriptomics data
+          </a>
+        </div>
+        <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+          <div class="card-body">
+            <ul>
+              <li>Background:</li>
+              <li>Goal:</li>
+              <li>Challenge: </li>
+              <li>Evaluation:</li>
+              <li>License: </li>
+              <li>Data and Code Skeleton:</li>
+              <li>FAQ:</li>
+              <li>Reference:</li>
+            </ul>
           </div>
         </div>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-              <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
-                    Task 4: Secure Record Linkage</a>
-              </h4>
-            </div>
-            <div id="collapse4" class="panel-collapse collapse">
-              <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-              minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-              commodo consequat.</div>
-            </div>
-          </div>
       </div>
 
-    <!--footer-->
-    <div w3-include-html="/pages/footer.html"></div>
+    <!--Tasks 4-->
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapse3">
+          Task 4: Secure Record Linkage
+        </a>
+      </div>
+      <div id="collapse3" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+          <ul>
+            <li>Background:</li>
+            <li>Goal:</li>
+            <li>Challenge: </li>
+            <li>Evaluation:</li>
+            <li>License: </li>
+            <li>Data and Code Skeleton:</li>
+            <li>FAQ:</li>
+            <li>Reference:</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--Submission Statement-->
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapse5">
+          Submission:
+        </a>
+      </div>
+      <div id="collapse5" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+          Each participating should submit the solution in two containers based on official Ubuntu docker image,
+          of which each can be run on an independent server running Ubuntu.
+          The containers should set up a communication channel to exchange the (protected) input and other necessary
+          data.
+          Each team is expected to also submit the source code of their solution. The source code will only be used for
+          evaluation purpose (i.e., checking the security compliance) by the organizers.
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+
+  <!--footer-->
+  <div w3-include-html="/pages/footer.html"></div>
 
 
-    <script>
-        includeHTML();
-    </script>
+  <script>
+    includeHTML();
+  </script>
 </body>
 
 </html>
