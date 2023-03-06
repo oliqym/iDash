@@ -23,18 +23,18 @@
   <link href="main.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="bg-dark">
   <div w3-include-html="/pages/header.html"></div>
 
-  <div class="container mt-3 mb-3">
-    <h3>4 Competition Tasks</h3>
+  <div class="container mt-3 mb-3 bg-dark border-dark margin-dark">
+    <h2 class="bg-dark text-white">4 Competition Tasks</h2>
     <div id="accordion">
       <!--Tasks 1-->
-      <div class="card">
-        <div class="card-header">
-          <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
-            <b>Task 1: Blockchain-based Recording of Biomedical and Genomic Compliance Training Certificates</b>
-          </a>
+      <div class="card bg-dark text-white">
+        <div class="card-header"><h6>
+          <a class="btn bg-dark text-white" data-bs-toggle="collapse" href="#collapseOne">
+            <b>T</b>ask 1: Blockchain-based Recording of Biomedical and Genomic Compliance Training Certificates
+          </a></h6>
           <small>(Organized by Tsung-Ting Kuo and Lucila Ohno-Machado)</small>
         </div>
         <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
@@ -44,47 +44,98 @@
               <li>Background:<br>
                 <!--content of the task-->
                 <p>
-                  Training certificates help ensure that researchers accessing sensitive protected data have received sufficient training to hand it in compliance with all necessary regulations. Many such certificates are still in the form of PDF files (e.g., CITI [1]). 
-                  Using the information contained in such training certificates can be critical for education, research, and other practical purposes. Individuals have access to their certificates and provide them to requesting institutions. Centralized solutions are not ideal since certificates are issued by various authorities and individuals want to have control over them. 
-                  Additionally, centralized solutions such as databases incur the risk of serving as a single-point-of-failure.[2] 
-                  The purpose of this task is to benchmark the use of blockchain, a decentralized technology, for storing and retrieving certificates.
-                </p></li>
-              <li>Goal:<br><p>
-                The goal of this track is to develop smart contracts on a blockchain network to record and query human subjects’ training certificates or similar documents. Specifically, given a set of training certificate PDF files, which are truncated into multiple sections of binary data (called “chunks,” and their metadata (participant name, certificate name, date of completion, etc.), 
-                contestants will design time-efficient data structures and algorithms based on Ethereum Solidity to store and retrieve such data.
-              </p></li>
-              <li>Challenge:<br><p>
-                All data (including chunks and their metadata) and intermediary data (e.g., index or cache of the original data) must be saved on-chain (i.e., no off-chain data storage is allowed) via smart contracts. We will provide the skeleton of the smart contracts and scripts. Note that the implementation of a smart contract is required to allow the insertion of one chunk and its accompanying metadata. Each participant can determine how each insertion is represented and stored in the smart contract. The two query functions should return (1) all metadata fulfilling a search criterion, and (2) the latest PDF file fulfilling a search criterion. Participants should not use any third party libraries. There will be n nodes (e.g., n = 5) in the blockchain network. Users should be able to query the data from any of the nodes. 
-                Participants can implement any algorithm to store, retrieve and present the data correctly and efficiently.
-              </p></li>
-              <li>Evaluation:<br><p>
-                The data sharing system will need to demonstrate satisfactory performance (i.e., accurate query results) on a test dataset, which will be different from the training set provided online. The efficiency of each solution will be evaluated as follows. First, we will insert the certificate chunks and metadata lines from the nodes for a certain time (e.g., 30 minutes) in the blockchain network. Then, we will query all nodes to verify that the insertions were done correctly. Finally, we will compute the average number of records inserted per second (33.33%), the average time to run the first query (33.33%), and the average time to run the second query (33.33%) as our final evaluation metric. We plan to evaluate the results using Go-Ethereum 1.10.7, Solidity 0.8.12 (with ABI Encoder v2 enabled), and Ubuntu 18.04.5. Submissions will not be evaluated using any other platforms/versions for fairness. 
-                No modification of the underlying Go-Ethereum source code is allowed. The submission should include one file of Solidity source code.
-              </p></li>
+                  Training certificates help ensure that researchers accessing sensitive protected data have received
+                  sufficient training to hand it in compliance with all necessary regulations. Many such certificates
+                  are still in the form of PDF files (e.g., CITI [1]).
+                  Using the information contained in such training certificates can be critical for education, research,
+                  and other practical purposes. Individuals have access to their certificates and provide them to
+                  requesting institutions. Centralized solutions are not ideal since certificates are issued by various
+                  authorities and individuals want to have control over them.
+                  Additionally, centralized solutions such as databases incur the risk of serving as a
+                  single-point-of-failure.[2]
+                  The purpose of this task is to benchmark the use of blockchain, a decentralized technology, for
+                  storing and retrieving certificates.
+                </p>
+              </li>
+              <li>Goal:<br>
+                <p>
+                  The goal of this track is to develop smart contracts on a blockchain network to record and query human
+                  subjects’ training certificates or similar documents. Specifically, given a set of training
+                  certificate PDF files, which are truncated into multiple sections of binary data (called “chunks,” and
+                  their metadata (participant name, certificate name, date of completion, etc.),
+                  contestants will design time-efficient data structures and algorithms based on Ethereum Solidity to
+                  store and retrieve such data.
+                </p>
+              </li>
+              <li>Challenge:<br>
+                <p>
+                  All data (including chunks and their metadata) and intermediary data (e.g., index or cache of the
+                  original data) must be saved on-chain (i.e., no off-chain data storage is allowed) via smart
+                  contracts. We will provide the skeleton of the smart contracts and scripts. Note that the
+                  implementation of a smart contract is required to allow the insertion of one chunk and its
+                  accompanying metadata. Each participant can determine how each insertion is represented and stored in
+                  the smart contract. The two query functions should return (1) all metadata fulfilling a search
+                  criterion, and (2) the latest PDF file fulfilling a search criterion. Participants should not use any
+                  third party libraries. There will be n nodes (e.g., n = 5) in the blockchain network. Users should be
+                  able to query the data from any of the nodes.
+                  Participants can implement any algorithm to store, retrieve and present the data correctly and
+                  efficiently.
+                </p>
+              </li>
+              <li>Evaluation:<br>
+                <p>
+                  The data sharing system will need to demonstrate satisfactory performance (i.e., accurate query
+                  results) on a test dataset, which will be different from the training set provided online. The
+                  efficiency of each solution will be evaluated as follows. First, we will insert the certificate chunks
+                  and metadata lines from the nodes for a certain time (e.g., 30 minutes) in the blockchain network.
+                  Then, we will query all nodes to verify that the insertions were done correctly. Finally, we will
+                  compute the average number of records inserted per second (33.33%), the average time to run the first
+                  query (33.33%), and the average time to run the second query (33.33%) as our final evaluation metric.
+                  We plan to evaluate the results using Go-Ethereum 1.10.7, Solidity 0.8.12 (with ABI Encoder v2
+                  enabled), and Ubuntu 18.04.5. Submissions will not be evaluated using any other platforms/versions for
+                  fairness.
+                  No modification of the underlying Go-Ethereum source code is allowed. The submission should include
+                  one file of Solidity source code.
+                </p>
+              </li>
               <li>License:<br>
-               <p>This track requires every participating team to share their code and/or binaries under the BSD 3-Clause License Open Source license. The track co-organizers will upload all submitted code and/or binaries to a GitHub repository under the BSD 3-Clause License right after the competition results are announced. 
-                By submitting the code and/or binaries, 
-                the participants automatically consent to allow the track co-organizers to release the code and/or binaries under the BSD 3-Clause License.</p></li>
-              <li>Data and Code Skeleton:<br><p>  
-                <!--link to google doc--><a href="https://drive.google.com/file/d/1LdUOBKH_m44VSk7JlLGYqasXarjdVRFl/view">Link
-                  <!--link icon-->
-                  <svg xmlns="http://www.w3.org/2000/svg"
-                width="16" height="16" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
-                <path
-                  d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
-                <path
-                  d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z" />
-              </svg></a></p></li>
-              <li>FAQ:<br><p><a href="https://docs.google.com/document/d/1X3SS6zQiUrC6hW8r3gAOA2a085oPAUYQrXJE-ZRrsXw/edit">Link<svg xmlns="http://www.w3.org/2000/svg"
-                width="16" height="16" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
-                <path
-                  d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
-                <path
-                  d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z" />
-              </svg></a></p></li>
+                <p>This track requires every participating team to share their code and/or binaries under the BSD
+                  3-Clause License Open Source license. The track co-organizers will upload all submitted code and/or
+                  binaries to a GitHub repository under the BSD 3-Clause License right after the competition results are
+                  announced.
+                  By submitting the code and/or binaries,
+                  the participants automatically consent to allow the track co-organizers to release the code and/or
+                  binaries under the BSD 3-Clause License.</p>
+              </li>
+              <li>Data and Code Skeleton:<br>
+                <p>
+                  <!--link to google doc-->
+                  <a href="https://drive.google.com/file/d/1LdUOBKH_m44VSk7JlLGYqasXarjdVRFl/view" class="link-info">Link
+                    <!--link icon-->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-link" viewBox="0 0 16 16">
+                      <path
+                        d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
+                      <path
+                        d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z" />
+                    </svg></a>
+                </p>
+              </li>
+              <li>FAQ:<br>
+                <p><a href="https://docs.google.com/document/d/1X3SS6zQiUrC6hW8r3gAOA2a085oPAUYQrXJE-ZRrsXw/edit" class="link-info">Link<svg
+                      xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
+                      <path
+                        d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z" />
+                    </svg></a></p>
+              </li>
               <li>Reference:<br>
-                <cite>[1] Collaborative Institutional Training Initiative (CITI),<a href="https://about.citiprogram.org/en/homepage/">https://about.citiprogram.org/en/homepage/</a>
-                  [2] Tellew J, Kuo T-T. CertificateChain: decentralized healthcare training certificate management system using blockchain and smart contracts. 
+                <cite>[1] Collaborative Institutional Training Initiative (CITI),<a
+                    href="https://about.citiprogram.org/en/homepage/">https://about.citiprogram.org/en/homepage/</a>
+                  [2] Tellew J, Kuo T-T. CertificateChain: decentralized healthcare training certificate management
+                  system using blockchain and smart contracts.
                   JAMIA Open. 2022;5(1). doi: 10.1093/jamiaopen/ooac019. PubMed PMID: 35571362.</cite>
               </li>
             </ul>
@@ -93,33 +144,47 @@
       </div>
       <!--Task 2-->
       <div class="card">
-        <div class="card-header">
-          <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+        <div class="card-header bg-dark text-white">
+          <a class="collapsed btn bg-dark text-white" data-bs-toggle="collapse" href="#collapseTwo">
             Task 2: <!--titile-->
           </a>
         </div>
         <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
-          <div class="card-body">
+          <div class="card-body bg-dark text-white">
             <ul>
-              <li>Background:<br><p></p></li>
-              <li>Goal:<br><p></p></li>
-              <li>Challenge:<br><p></p> </li>
-              <li>Evaluation:<br><p></p></li>
-              <li>License:<br><p></p> </li>
-              <li>Data and Code Skeleton:<br><p><a href=""><svg xmlns="http://www.w3.org/2000/svg"
-                width="16" height="16" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
-                <path
-                  d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
-                <path
-                  d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z" />
-              </svg></a></p></li>
-              <li>FAQ:<br><p><a href=""><svg xmlns="http://www.w3.org/2000/svg"
-                width="16" height="16" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
-                <path
-                  d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
-                <path
-                  d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z" />
-              </svg></a></p></li>
+              <li>Background:<br>
+                <p></p>
+              </li>
+              <li>Goal:<br>
+                <p></p>
+              </li>
+              <li>Challenge:<br>
+                <p></p>
+              </li>
+              <li>Evaluation:<br>
+                <p></p>
+              </li>
+              <li>License:<br>
+                <p></p>
+              </li>
+              <li>Data and Code Skeleton:<br>
+                <p><a href="" class="link-info"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-link" viewBox="0 0 16 16">
+                      <path
+                        d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
+                      <path
+                        d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z" />
+                    </svg></a></p>
+              </li>
+              <li>FAQ:<br>
+                <p><a href="" class="link-info"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-link" viewBox="0 0 16 16">
+                      <path
+                        d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
+                      <path
+                        d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z" />
+                    </svg></a></p>
+              </li>
               <li>Reference:<cite></cite></li>
             </ul>
           </div>
@@ -127,19 +192,19 @@
       </div>
       <!--Task 3-->
       <div class="card">
-        <div class="card-header">
-          <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+        <div class="card-header bg-dark text-white">
+          <a class="collapsed btn bg-dark text-white link-info" data-bs-toggle="collapse" href="#collapseThree">
             Task 3: <!--title-->
           </a>
         </div>
         <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
-          <div class="card-body">
+          <div class="card-body bg-dark text-white">
             <!-- <ul>
               <li>Background:<br><p></p></li>
               <li>Goal:<br><p></p></li>
-              <li>Challenge:<br><p></p> </li>
+              <li>Challenge:<br><p></p></li>
               <li>Evaluation:<br><p></p></li>
-              <li>License:<br><p></p> </li>
+              <li>License:<br><p></p></li>
               <li>Data and Code Skeleton:<br><p></p></li>
               <li>FAQ:<br><p></p></li>
               <li>Reference:<br><cite></cite></li>
@@ -148,16 +213,16 @@
         </div>
       </div>
 
-    <!--Tasks 4-->
-    <div class="card">
-      <div class="card-header">
-        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapse3">
-          Task 4: <!--title-->
-        </a>
-      </div>
-      <div id="collapse3" class="collapse" data-bs-parent="#accordion">
-        <div class="card-body">
-          <!-- <ul>
+      <!--Tasks 4-->
+      <div class="card">
+        <div class="card-header bg-dark text-white">
+          <a class="collapsed btn bg-dark text-white" data-bs-toggle="collapse" href="#collapse3">
+            Task 4: <!--title-->
+          </a>
+        </div>
+        <div id="collapse3" class="collapse" data-bs-parent="#accordion">
+          <div class="card-body bg-dark text-white">
+            <!-- <ul>
             <li>Background:<br><br></li>
             <li>Goal:<br></li>
             <li>Challenge:<br> </li>
@@ -167,29 +232,30 @@
             <li>FAQ:<br></li>
             <li>Reference:</li>
           </ul> -->
+          </div>
         </div>
       </div>
-    </div>
-    <!--Submission Statement-->
-    <div class="card">
-      <div class="card-header">
-        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapse5">
-          Submission:
-        </a>
-      </div>
-      <div id="collapse5" class="collapse" data-bs-parent="#accordion">
-        <div class="card-body">
-          Each participating should submit the solution in two containers based on official Ubuntu docker image,
-          of which each can be run on an independent server running Ubuntu.
-          The containers should set up a communication channel to exchange the (protected) input and other necessary
-          data.
-          Each team is expected to also submit the source code of their solution. The source code will only be used for
-          evaluation purpose (i.e., checking the security compliance) by the organizers.
+      <!--Submission Statement-->
+      <div class="card">
+        <div class="card-header bg-dark text-white">
+          <a class="collapsed btn bg-dark text-white" data-bs-toggle="collapse" href="#collapse5">
+            Submission:
+          </a>
+        </div>
+        <div id="collapse5" class="collapse" data-bs-parent="#accordion">
+          <div class="card-body bg-dark text-white">
+            Each participating should submit the solution in two containers based on official Ubuntu docker image,
+            of which each can be run on an independent server running Ubuntu.
+            The containers should set up a communication channel to exchange the (protected) input and other necessary
+            data.
+            Each team is expected to also submit the source code of their solution. The source code will only be used
+            for
+            evaluation purpose (i.e., checking the security compliance) by the organizers.
+          </div>
         </div>
       </div>
     </div>
   </div>
- </div>
 
   <!--footer-->
   <div w3-include-html="/pages/footer.html"></div>
