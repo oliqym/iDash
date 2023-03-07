@@ -8,3 +8,7 @@
     border-color: #00ACF0;
 }
 
+.btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none;
+ }

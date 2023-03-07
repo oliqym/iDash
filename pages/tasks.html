@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,25 +16,33 @@
   <!--additional css-->
   <link href="main.css" rel="stylesheet">
 </head>
+
+
 <body class="bg-dark">
   <div w3-include-html="/pages/header.html"></div>
   <div class="container mt-3 mb-3 bg-dark border-dark margin-dark">
-    <h2 class="bg-dark text-white">4 Competition Tasks</h2>
+    <h2 class="bg-dark text-white text-center">4 Competition Tasks</h2>
     <div id="accordion">
       <!--Tasks 1-->
-      <div class="card bg-dark text-white">
-        <div class="card-header"><h6>
-          <a class="btn bg-dark text-white" data-bs-toggle="collapse" href="#collapseOne">
-            <b>T</b>ask 1: Blockchain-based Recording of Biomedical and Genomic Compliance Training Certificates
-          </a></h6>
+      <div class="card bg-dark border-info">
+
+        <div class="card-header bg-dark text-white border-dark">
+          <h6>
+            <!--choose a text color-->
+            <a class="btn btn-dark bg-dark text-info shadow-none border-dark card-link" role="button"
+              data-bs-toggle="collapse" href="#collapseOne">
+              <b>T</b>ask 1: Blockchain-based Recording of Biomedical and Genomic Compliance Training Certificates
+            </a>
+          </h6>
           <small>(Organized by Tsung-Ting Kuo and Lucila Ohno-Machado)</small>
         </div>
+
         <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
-          <div class="card-body">
-            <ul>
+          <div class="card-body bg-dark text-white border-dark">
+            <ul class="list-group list-group-flush">
               <!--task section title-->
-              <li>Background:<br>
-                <!--content of the task-->
+              <!--content of the task-->
+              <li class="list-group-item bg-dark text-white">Background:<br>
                 <p>
                   Training certificates help ensure that researchers accessing sensitive protected data have received
                   sufficient training to hand it in compliance with all necessary regulations. Many such certificates
@@ -48,7 +57,7 @@
                   storing and retrieving certificates.
                 </p>
               </li>
-              <li>Goal:<br>
+              <li class="list-group-item bg-dark text-white">Goal:<br>
                 <p>
                   The goal of this track is to develop smart contracts on a blockchain network to record and query human
                   subjects’ training certificates or similar documents. Specifically, given a set of training
@@ -58,7 +67,7 @@
                   store and retrieve such data.
                 </p>
               </li>
-              <li>Challenge:<br>
+              <li class="list-group-item bg-dark text-white">Challenge:<br>
                 <p>
                   All data (including chunks and their metadata) and intermediary data (e.g., index or cache of the
                   original data) must be saved on-chain (i.e., no off-chain data storage is allowed) via smart
@@ -73,7 +82,7 @@
                   efficiently.
                 </p>
               </li>
-              <li>Evaluation:<br>
+              <li class="list-group-item bg-dark text-white">Evaluation:<br>
                 <p>
                   The data sharing system will need to demonstrate satisfactory performance (i.e., accurate query
                   results) on a test dataset, which will be different from the training set provided online. The
@@ -89,7 +98,7 @@
                   one file of Solidity source code.
                 </p>
               </li>
-              <li>License:<br>
+              <li class="list-group-item bg-dark text-white">License:<br>
                 <p>This track requires every participating team to share their code and/or binaries under the BSD
                   3-Clause License Open Source license. The track co-organizers will upload all submitted code and/or
                   binaries to a GitHub repository under the BSD 3-Clause License right after the competition results are
@@ -98,10 +107,11 @@
                   the participants automatically consent to allow the track co-organizers to release the code and/or
                   binaries under the BSD 3-Clause License.</p>
               </li>
-              <li>Data and Code Skeleton:<br>
+              <li class="list-group-item bg-dark text-white">Data and Code Skeleton:<br>
                 <p>
                   <!--link to google doc-->
-                  <a href="https://drive.google.com/file/d/1LdUOBKH_m44VSk7JlLGYqasXarjdVRFl/view" class="link-info">Link
+                  <a href="https://drive.google.com/file/d/1LdUOBKH_m44VSk7JlLGYqasXarjdVRFl/view"
+                    class="link-info">Link
                     <!--link icon-->
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                       class="bi bi-link" viewBox="0 0 16 16">
@@ -112,17 +122,17 @@
                     </svg></a>
                 </p>
               </li>
-              <li>FAQ:<br>
-                <p><a href="https://docs.google.com/document/d/1X3SS6zQiUrC6hW8r3gAOA2a085oPAUYQrXJE-ZRrsXw/edit" class="link-info">Link<svg
-                      xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link"
-                      viewBox="0 0 16 16">
+              <li class="list-group-item bg-dark text-white">FAQ:<br>
+                <p><a href="https://docs.google.com/document/d/1X3SS6zQiUrC6hW8r3gAOA2a085oPAUYQrXJE-ZRrsXw/edit"
+                    class="link-info">Link<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
                       <path
                         d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
                       <path
                         d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z" />
                     </svg></a></p>
               </li>
-              <li>Reference:<br>
+              <li class="list-group-item bg-dark text-white">Reference:<br>
                 <cite>[1] Collaborative Institutional Training Initiative (CITI),<a
                     href="https://about.citiprogram.org/en/homepage/">https://about.citiprogram.org/en/homepage/</a>
                   [2] Tellew J, Kuo T-T. CertificateChain: decentralized healthcare training certificate management
@@ -134,118 +144,149 @@
         </div>
       </div>
       <!--Task 2-->
-      <div class="card">
-        <div class="card-header bg-dark text-white">
-          <a class="collapsed btn bg-dark text-white" data-bs-toggle="collapse" href="#collapseTwo">
-            Task 2: <!--titile-->
-          </a>
+      <div class="card border-info">
+        <div class="card-header bg-dark text-white border-dark">
+          <h6> <a class="collapsed btn bg-dark text-white shadow-none border-dark card-link" data-bs-toggle="collapse"
+              href="#collapseTwo">
+              Task 2: <!--titile-->
+            </a></h6>
+          <small>(Organized by Tsung-Ting Kuo and Lucila Ohno-Machado)</small>
         </div>
+
         <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
-          <div class="card-body bg-dark text-white">
-            <ul>
-              <li>Background:<br>
+          <div class="card-body bg-dark text-white border-info">
+            <ul class="list-group list-group-flush">
+
+              <li class="list-group-item bg-dark text-white">Background:<br>
+              </li>
+              <p></p>
+              <li class="list-group-item bg-dark text-white">Goal:<br>
+              </li>
+              <p></p>
+              <li class="list-group-item bg-dark text-white">Challenge:<br>
+              </li>
+              <p></p>
+              <li class="list-group-item bg-dark text-white">Evaluation:<br>
+              </li>
+              <p></p>
+              <li class="list-group-item bg-dark text-white">License:<br>
                 <p></p>
               </li>
-              <li>Goal:<br>
-                <p></p>
-              </li>
-              <li>Challenge:<br>
-                <p></p>
-              </li>
-              <li>Evaluation:<br>
-                <p></p>
-              </li>
-              <li>License:<br>
-                <p></p>
-              </li>
-              <li>Data and Code Skeleton:<br>
-                <p><a href="" class="link-info"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              <li class="list-group-item bg-dark text-white">Data and Code Skeleton:<br>
+                <p>
+                  <!--link to google doc-->
+                  <a href="https://drive.google.com/file/d/1LdUOBKH_m44VSk7JlLGYqasXarjdVRFl/view"
+                    class="link-info card-link">Link
+                    <!--link icon-->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                       class="bi bi-link" viewBox="0 0 16 16">
+                      <path
+                        d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
+                      <path
+                        d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z" />
+                    </svg></a>
+                </p>
+              </li>
+              <li class="list-group-item bg-dark text-white">FAQ:<br>
+                <p><a href="https://docs.google.com/document/d/1X3SS6zQiUrC6hW8r3gAOA2a085oPAUYQrXJE-ZRrsXw/edit"
+                    class="link-info card-link">Link<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
                       <path
                         d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
                       <path
                         d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z" />
                     </svg></a></p>
               </li>
-              <li>FAQ:<br>
-                <p><a href="" class="link-info"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                      class="bi bi-link" viewBox="0 0 16 16">
-                      <path
-                        d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
-                      <path
-                        d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z" />
-                    </svg></a></p>
-              </li>
-              <li>Reference:<cite></cite></li>
+              <li class="list-group-item bg-dark text-white">Reference:<cite></cite></li>
             </ul>
           </div>
         </div>
       </div>
-      <!--Task 3-->
-      <div class="card">
-        <div class="card-header bg-dark text-white">
-          <a class="collapsed btn bg-dark text-white link-info" data-bs-toggle="collapse" href="#collapseThree">
+    </div>
+    <!--Task 3-->
+    <div class="card border-info">
+      <div class="card-header bg-dark text-white border-dark">
+        <h6> <a class="collapsed btn btn-dark bg-dark text-white shadow-none card-link" data-bs-toggle="collapse"
+            href="#collapseThree">
             Task 3: <!--title-->
-          </a>
-        </div>
-        <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
-          <div class="card-body bg-dark text-white">
-            <!-- <ul>
-              <li>Background:<br><p></p></li>
-              <li>Goal:<br><p></p></li>
-              <li>Challenge:<br><p></p></li>
-              <li>Evaluation:<br><p></p></li>
-              <li>License:<br><p></p></li>
-              <li>Data and Code Skeleton:<br><p></p></li>
-              <li>FAQ:<br><p></p></li>
-              <li>Reference:<br><cite></cite></li>
-            </ul> -->
-          </div>
-        </div>
+          </a></h6>
+        <small>Organized By</small>
       </div>
 
-      <!--Tasks 4-->
-      <div class="card">
-        <div class="card-header bg-dark text-white">
-          <a class="collapsed btn bg-dark text-white" data-bs-toggle="collapse" href="#collapse3">
-            Task 4: <!--title-->
-          </a>
-        </div>
-        <div id="collapse3" class="collapse" data-bs-parent="#accordion">
-          <div class="card-body bg-dark text-white">
-            <!-- <ul>
-            <li>Background:<br><br></li>
-            <li>Goal:<br></li>
-            <li>Challenge:<br> </li>
-            <li>Evaluation:<br></li>
-            <li>License:<br> </li>
-            <li>Data and Code Skeleton:<br></li>
-            <li>FAQ:<br></li>
-            <li>Reference:</li>
-          </ul> -->
-          </div>
-        </div>
-      </div>
-      <!--Submission Statement-->
-      <div class="card">
-        <div class="card-header bg-dark text-white">
-          <a class="collapsed btn bg-dark text-white" data-bs-toggle="collapse" href="#collapse5">
-            Submission:
-          </a>
-        </div>
-        <div id="collapse5" class="collapse" data-bs-parent="#accordion">
-          <div class="card-body bg-dark text-white">
-            Each participating should submit the solution in two containers based on official Ubuntu docker image,
-            of which each can be run on an independent server running Ubuntu.
-            The containers should set up a communication channel to exchange the (protected) input and other necessary
-            data.
-            Each team is expected to also submit the source code of their solution. The source code will only be used
-            for
-            evaluation purpose (i.e., checking the security compliance) by the organizers.
-          </div>
+
+      <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body bg-dark text-white border-dark">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-dark text-white">Goal:<br>
+              <p></p>
+            </li>
+            <li class="list-group-item bg-dark text-white">Background:<br>
+              <p></p>
+            </li>
+            <li class="list-group-item bg-dark text-white">Challenge:<br>
+              <p></p>
+            </li>
+            <li class="list-group-item bg-dark text-white">Evaluation:<br>
+              <p></p>
+            </li>
+            <li class="list-group-item bg-dark text-white">License:<br>
+              <p></p>
+            </li>
+            <li class="list-group-item bg-dark text-white">Data and Code Skeleton:<br>
+              <p></p>
+            </li>
+            <li class="list-group-item bg-dark text-white">FAQ:<br>
+              <p></p>
+            </li>
+            <li class="list-group-item bg-dark text-white">Reference:<br><cite></cite></li>
+          </ul>
         </div>
       </div>
     </div>
+
+    <!--Tasks 4-->
+    <div class="card border-info">
+      <div class="card-header bg-dark text-white border-dark">
+        <h6><a class="collapsed btn bg-dark text-white shadow-none card-link" data-bs-toggle="collapse" href="#collapseFour">
+            Task 4: <!--title-->
+          </a></h6>
+        <small>Organized By</small>
+      </div>
+      <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body bg-dark text-white">
+          <!-- <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-dark text-white">Background:<br><br></li>
+            <li class="list-group-item bg-dark text-white">Goal:<br></li>
+            <li class="list-group-item bg-dark text-white">Challenge:<br> </li>
+            <li class="list-group-item bg-dark text-white">Evaluation:<br></li>
+            <li class="list-group-item bg-dark text-white">License:<br> </li>
+            <li class="list-group-item bg-dark text-white">Data and Code Skeleton:<br></li>
+            <li class="list-group-item bg-dark text-white">FAQ:<br></li>
+            <li class="list-group-item bg-dark text-white">Reference:</li>
+          </ul> -->
+        </div>
+      </div>
+    </div>
+    <!--Submission Statement-->
+    <div class="card border-info">
+      <div class="card-header bg-dark text-white">
+        <a class="collapsed btn bg-dark text-white shadow-none card-link" data-bs-toggle="collapse" href="#collapseFive">
+          Submission:
+        </a>
+      </div>
+      <div id="collapseFive" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body bg-dark text-white">
+          Each participating should submit the solution in two containers based on official Ubuntu docker image,
+          of which each can be run on an independent server running Ubuntu.
+          The containers should set up a communication channel to exchange the (protected) input and other necessary
+          data.
+          Each team is expected to also submit the source code of their solution. The source code will only be used
+          for
+          evaluation purpose (i.e., checking the security compliance) by the organizers.
+        </div>
+      </div>
+    </div>
+  </div>
   </div>
 
   <!--footer-->

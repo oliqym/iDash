@@ -20,20 +20,23 @@
 
 <body class="bg-dark">
     <div w3-include-html="/pages/header.html"></div>
+    <div class="bg-dark px-4 py-5 d-flex justify-content-center container">
+        <h3 class="text-white text-center py-5">Contacts</h3>
+    </div>
     <div class="container my-3 bg-dark">
-        <div class="row row-cols-sm-1 row-cols-md-3 g-4">
+        <div class="row g-4 ">
             <!--MAYBE ADD THE CONTACT LINKS INSIDE H5-->
-            <div class="col my-auto ml-auto text-center">
-                <div class="card text-center text-white bg-dark mb-3 border-info" style="width: 18rem;">
+            <div class="col-md-4 my-4 mb-md-0 mx-auto">
+                <div class="card text-center text-white bg-dark mb-3 border-info">
                     <img src="/img/iu.png" class="card-img-top img-thumbnail img-fluid border-info" alt="IU">
-                    <div class="card-body">
+                    <div class="card-body mx-auto">
                         <h5 class="card-title">School of Informatics and Computing at Indiana University</h5>
                     </div>
                 </div>
             </div>
             <!--MAYBE ADD THE CONTACT LINKS INSIDE H5-->
-            <div class="col">
-                <div class="card text-center text-white bg-dark mb-3 border-info" style="width: 18rem;">
+            <div class="col-md-4 my-4 mb-md-0">
+                <div class="card text-center text-white bg-dark mb-3 border-info">
                     <img src="/img/uth.jpeg" class="card-img-top img-thumbnail img-fluid border-info" alt="UT">
                     <div class="card-body">
                         <h5 class="card-title">School of Biomedical Informatics at UTHealth</h5>
@@ -41,8 +44,8 @@
                 </div>
             </div>
             <!--MAYBE ADD THE CONTACT LINKS INSIDE H5-->
-            <div class="col">
-                <div class="card text-center text-white bg-dark mb-3 border-info" style="width: 18rem;">
+            <div class="col-md-4 my-4 mb-md-0">
+                <div class="card text-center text-white bg-dark mb-3 border-info">
                     <img src="/img/ucsd.png" class="card-img-top img-fluid img-thumbnail border-info" alt="UCSD">
                     <div class="card-body">
                         <h5 class="card-title">Department of Biomedical Informatics at UCSD</h5>
@@ -50,11 +53,13 @@
                 </div>
             </div>
         </div>
-        <!--footer-->
-        <div w3-include-html="/pages/footer.html"></div>
-        <script>
-            includeHTML();
-        </script>
+    </div>
+    </div>
+    <!--footer-->
+    <div w3-include-html="/pages/footer.html"></div>
+    <script>
+        includeHTML();
+    </script>
 </body>
 
 </html>
