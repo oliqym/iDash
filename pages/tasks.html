@@ -20,8 +20,8 @@
 
 <body class="bg-dark">
   <div w3-include-html="/pages/header.html"></div>
-  <div class="container mt-3 mb-3 bg-dark border-dark margin-dark">
-    <h2 class="bg-dark text-white text-center">4 Competition Tasks</h2>
+  <div class="container px-4 py-5 bg-dark border-dark margin-dark">
+    <h2 class="bg-dark text-white text-center mb-4">4 Competition Tasks</h2>
     <div id="accordion">
       <!--Tasks 1-->
       <div class="card bg-dark border-info">
@@ -30,7 +30,7 @@
           <h6>
             <!--choose a text color-->
             <a class="btn btn-dark bg-dark text-info shadow-none border-dark card-link" role="button"
-              data-bs-toggle="collapse" href="#collapseOne">
+              data-bs-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="#collapseOne">
               <b>T</b>ask 1: Blockchain-based Recording of Biomedical and Genomic Compliance Training Certificates
             </a>
           </h6>
@@ -146,8 +146,8 @@
       <!--Task 2-->
       <div class="card border-info">
         <div class="card-header bg-dark text-white border-dark">
-          <h6> <a class="collapsed btn bg-dark text-white shadow-none border-dark card-link" data-bs-toggle="collapse"
-              href="#collapseTwo">
+          <h6> <a class="btn btn-dark bg-dark text-info shadow-none border-dark card-link" role="button"
+              data-bs-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="#collapseTwo">
               Task 2: <!--titile-->
             </a></h6>
           <small>(Organized by Tsung-Ting Kuo and Lucila Ohno-Machado)</small>
@@ -206,8 +206,8 @@
     <!--Task 3-->
     <div class="card border-info">
       <div class="card-header bg-dark text-white border-dark">
-        <h6> <a class="collapsed btn btn-dark bg-dark text-white shadow-none card-link" data-bs-toggle="collapse"
-            href="#collapseThree">
+        <h6> <a class="btn btn-dark bg-dark text-info shadow-none border-dark card-link" role="button"
+            data-bs-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="#collapseThree">
             Task 3: <!--title-->
           </a></h6>
         <small>Organized By</small>
@@ -247,13 +247,14 @@
     <!--Tasks 4-->
     <div class="card border-info">
       <div class="card-header bg-dark text-white border-dark">
-        <h6><a class="collapsed btn bg-dark text-white shadow-none card-link" data-bs-toggle="collapse" href="#collapseFour">
+        <h6><a class="btn btn-dark bg-dark text-info shadow-none border-dark card-link" role="button"
+          data-bs-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="#collapseFour">
             Task 4: <!--title-->
           </a></h6>
         <small>Organized By</small>
       </div>
       <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
-        <div class="card-body bg-dark text-white">
+        <div class="card-body bg-dark text-white ">
           <!-- <ul class="list-group list-group-flush">
             <li class="list-group-item bg-dark text-white">Background:<br><br></li>
             <li class="list-group-item bg-dark text-white">Goal:<br></li>
@@ -267,10 +268,12 @@
         </div>
       </div>
     </div>
+
     <!--Submission Statement-->
     <div class="card border-info">
       <div class="card-header bg-dark text-white">
-        <a class="collapsed btn bg-dark text-white shadow-none card-link" data-bs-toggle="collapse" href="#collapseFive">
+        <a class="btn btn-dark bg-dark text-info shadow-none border-dark card-link" role="button"
+          data-bs-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="#collapseFive">
           Submission:
         </a>
       </div>
