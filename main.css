@@ -1,14 +1,19 @@
 /* hex:	#00ACF0*/
 
-.navbar-dark .navbar-toggler{
-    border-color: #00ACF0;
+.navbar-dark .navbar-toggler {
+  border-color: #00acf0;
 }
 
-#history a:hover{
-    border-color: #00ACF0;
+#history a:hover {
+  border-color: #00acf0;
 }
 
-.btn:focus,.btn:active {
-    outline: none !important;
-    box-shadow: none;
- }
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #00acf0;
+}
