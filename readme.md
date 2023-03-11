@@ -38,3 +38,6 @@ add contact link
 use .link-info or text-info to style the available contacts and emails
 ----------------------------------------------------------------------
 register.html
+<!--Main content-->
+replace the urls in <iframe> when the document is ready
+-------------------------------------------

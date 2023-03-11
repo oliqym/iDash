@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,19 +13,35 @@
     <script src="/scripts/reusable.js"></script>
     <title>iDash</title>
     <link rel="icon" type="images/x-icon" href="/img/favicon-32x32.png" alt="">
-    <!--additional css-->
-    <link href="main.css" rel="stylesheet">
 </head>
+
 <body class="bg-dark">
     <!--Header-->
     <div w3-include-html="/pages/header.html"></div>
-    <div class="bg-dark text-secondary px-4 py-5 d-flex justify-content-center flex-wrap container">
-        <div class="row">
+    <!--Main content-->
+    <div class="bg-dark px-4 py-5 container">
+        <div class="row g-4" id="accordion">
             <div class="col">
-                <a class="link-info text-decoration-none">Competition Registration</a>
+                <button class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold" role="button" data-bs-toggle="collapse"
+                    href="#collapseOne" aria-expanded="false" aria-controls="#collapseOne">
+                    Competition Registration</button>
+                <div id="collapseOne" class="collapse my-4 d-flex justify-content-center" data-bs-parent="#accordion">
+                    <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLScnfahnEmDEf0T_aku2p4mURnjwP9kJExXSN0YlIMzzxL4cuA/viewform?usp=pp_url"
+                        width="960" height="1751" frameborder="0" marginheight="0" marginwidth="0">Loading...
+                    </iframe>
+                </div>
             </div>
             <div class="col">
-                <a class="link-info text-decoration-none">Workshop <br>Registration</a>
+                <button class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold" role="button" data-bs-toggle="collapse"
+                    href="#collapseTwo" aria-controls="#collapseTwo">
+                    Workshop Registration</button>
+                <div id="collapseTwo" class="collapse my-4 d-flex justify-content-center" data-bs-parent="#accordion">
+                    <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLScnfahnEmDEf0T_aku2p4mURnjwP9kJExXSN0YlIMzzxL4cuA/viewform?usp=pp_url"
+                        width="960" height="1751" frameborder="0" marginheight="0" marginwidth="0">Loading...
+                    </iframe>
+                </div>
             </div>
         </div>
     </div>
