@@ -11,11 +11,11 @@
   box-shadow: none;
 }
 
-a.registerLink:hover {
-  background-color: #00acf0;
+#navbarNavDropdown > .nav-item > a:hover {
+  color: #00acf0 !important;
 }
 
 
-a.registerLink:hover, a..registerLink:active {
-  color: red;
-}
+
+
+

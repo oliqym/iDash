@@ -39,5 +39,5 @@ use .link-info or text-info to style the available contacts and emails
 ----------------------------------------------------------------------
 register.html
 <!--Main content-->
-replace the urls in <iframe> when the document is ready
--------------------------------------------
+replace the urls in <a> href="urls" when the documents are ready
+----------------------------------------------------------------
